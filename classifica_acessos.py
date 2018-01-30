@@ -1,3 +1,5 @@
+#1. separar 90% para treino e 10% para teste: 100%
+
 from dados import carregar_acessos
 
 x, y = carregar_acessos()
@@ -11,11 +13,11 @@ treino_y = y[sep:]
 teste_x = x[:sep]
 teste_y = y[:sep]
 
+
 from sklearn.naive_bayes import MultinomialNB
 
 modelo = MultinomialNB()
 modelo.fit(treino_x, treino_y)
-
 
 resultado = modelo.predict(teste_x)
 diferencas = resultado - teste_y
