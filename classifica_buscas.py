@@ -37,5 +37,18 @@ total_de_acertos = len(acertos)
 total_de_elementos = len(teste_x)
 taxa_de_acerto = 100.0 * total_de_acertos / total_de_elementos
 
-print(taxa_de_acerto)
+print('Total de testes')
 print(total_de_elementos)
+
+print('\nMachine Learning')
+print('Taxa de acerto: {}'.format(taxa_de_acerto))
+
+#algoritmo que responde tudo 1 ou 0
+print('\nAlgoritmo base')
+from collections import Counter
+#total_de_acertos_burro_1 = list(Y).count(1)
+#total_de_acertos_burro_0 = len(Y[Y == 0])
+#Counter mostra os dados que aparecem e o max pega o que aparece mais
+total_de_acertos_base = max(Counter(teste_y).itervalues())
+taxa_de_acerto_base = 100.0 * total_de_acertos_base / len(teste_y)
+print('Taxa de acerto: {}'.format(taxa_de_acerto_base))
