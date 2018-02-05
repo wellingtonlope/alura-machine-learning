@@ -1,4 +1,4 @@
-# alura-machine-learning
+# alura-machine-learning-I
 
 # Gerenciador de bibliotecas
 https://pip.pypa.io/en/stable/
